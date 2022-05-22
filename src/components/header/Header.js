@@ -5,6 +5,7 @@ import { Button } from "../styled-components/Button.styled";
 import { Para } from "../styled-components/Para.styled";
 //import icons
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { SiDevdotto } from "react-icons/si";
 
 const Header = () => {
   return (
@@ -37,7 +38,7 @@ const Header = () => {
             color="white"
             hoverColor="black"
           >
-            contact me
+            <p className="headerButtonText">contact me</p>
           </Button>
           <Para
             margin="0 10px"
@@ -45,12 +46,14 @@ const Header = () => {
             fontWeight="500"
             lineHeight="2rem"
             padding="1rem 0"
+            width="8rem"
           >
             or, find me on:{" "}
           </Para>
           <div className="iconGroup d-flex flex-row justify-content-center align-items-center">
-            <FaGithub />
-            <FaLinkedin />
+            <FaGithub className="headerIcon" />
+            <FaLinkedin className="headerIcon" />
+            <SiDevdotto className="headerIcon" />
           </div>
         </div>
       </div>

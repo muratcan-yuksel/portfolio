@@ -6,8 +6,8 @@ export const Para = styled.p`
   line-height: ${(props) => props.lineHeight};
   padding: ${(props) => props.padding};
   margin: ${(props) => props.margin};
-  height: auto;
-  width: auto;
+  height: ${(props) => props.height};
+  width: ${(props) => props.width};
   border-radius: 1rem;
   transition: 0.3s;
   &:hover {

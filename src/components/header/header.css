@@ -12,7 +12,6 @@
   width: 100%;
   background: var(--yellow-bg);
   color: black;
-  border: solid;
   padding-top: 10rem;
   padding-bottom: 2rem;
 }
@@ -42,6 +41,10 @@
 }
 .headerBtn {
   margin-right: 2rem;
+}
+.headerIcon {
+  font-size: 2rem;
+  margin-right: 10px;
 }
 @media only screen and (max-width: 992px) {
   .headerComponent {

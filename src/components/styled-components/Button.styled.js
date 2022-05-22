@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   height: 5rem;
+  min-width: 10rem;
   width: auto;
   transition: 0.3s;
   background-color: ${(props) => props.backgroundColor};
