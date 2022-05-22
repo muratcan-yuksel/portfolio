@@ -7,13 +7,10 @@
   src: url(../../assets//fonts/Inconsolata.ttf);
 }
 
-body {
-}
-
 .headerComponent {
   height: 80vh;
   width: 100vw;
-  background: #ffe01b;
+  background: var(--yellow-bg);
   color: black;
   border: solid;
   padding-top: 10rem;

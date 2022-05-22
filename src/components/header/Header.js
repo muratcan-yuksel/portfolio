@@ -18,7 +18,9 @@ const Header = () => {
         <Para fontFamily="inconsalata" fontWeight="500" lineHeight="2rem">
           I build things for web 3 as well as the good ol' fashioned web 2
         </Para>
-        <Button backgroundColor="black">click</Button>
+        <Button backgroundColor="#ff1255" color="white" hoverColor="black">
+          contact me
+        </Button>
       </div>
       <div className="imageContainer">
         <img src={image} alt="" className="profileImage" />
