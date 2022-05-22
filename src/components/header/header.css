@@ -1,6 +1,10 @@
 @font-face {
-  font-family: myFont;
+  font-family: openSans;
   src: url(../../assets//fonts/openSans.ttf);
+}
+@font-face {
+  font-family: inconsalata;
+  src: url(../../assets//fonts/Inconsolata.ttf);
 }
 
 body {
@@ -28,8 +32,13 @@ body {
 }
 .headerBigTitle {
   font-size: 10rem;
-  font-family: myFont;
+  font-family: openSans;
 }
 .headerTitle {
   font-size: 2.5rem;
+}
+.headerPara {
+  font-family: inconsalata;
+  font-weight: 500;
+  line-height: 2rem;
 }
