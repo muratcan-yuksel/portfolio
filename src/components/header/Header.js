@@ -5,13 +5,13 @@ import image from "../../assets/images/pp.jpg";
 const Header = () => {
   return (
     <div className="headerComponent d-flex flex-column flex-md-row justify-content-center">
-      <div className="textGroup">
-        <div className="bigTitle">
+      <div className="headerTextGroup">
+        <div className="headerBigTitle">
           {" "}
-          Hi, <span className="title"> my name is Murat</span>{" "}
+          Hi, <span className="headerTitle"> my name is Murat</span>{" "}
         </div>
-        <div className="para">I'm a web developer</div>
-        <div className="para">
+        <div className="headerPara">I'm a web developer</div>
+        <div className="headerPara">
           I build things for web 3 as well as the good ol' fashioned web 2
         </div>
       </div>
