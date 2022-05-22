@@ -2,3 +2,7 @@
   --yellow-bg: #ffe01b;
   --grey: #403b3b;
 }
+body {
+  height: 100vh;
+  width: 100vw;
+}
