@@ -3,4 +3,24 @@
   width: 100vw;
   background: #ffe01b;
   color: black;
+  border: solid;
+  padding-top: 10rem;
+}
+.imageContainer {
+  width: 300px;
+  height: 300px;
+}
+.profileImage {
+  width: auto;
+  height: 100%;
+  border-radius: 50%;
+}
+.textGroup {
+  margin-right: 5rem;
+}
+.bigTitle {
+  font-size: 10rem;
+}
+.title {
+  font-size: 2.5rem;
 }
