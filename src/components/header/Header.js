@@ -6,7 +6,7 @@ import { Para } from "../styled-components/Para.styled";
 
 const Header = () => {
   return (
-    <div className="headerComponent d-flex flex-column flex-md-row justify-content-center">
+    <div className="headerComponent d-flex flex-column-reverse flex-md-row justify-content-md-center align-items-md-center">
       <div className="headerTextGroup">
         <div className="headerBigTitle">
           {" "}
