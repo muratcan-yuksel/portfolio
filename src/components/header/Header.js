@@ -1,6 +1,8 @@
 import React from "react";
 import "./header.css";
 import image from "../../assets/images/pp.jpg";
+import { Button } from "../styled-components/Button.styled";
+import { Para } from "../styled-components/Para.styled";
 
 const Header = () => {
   return (
@@ -10,10 +12,13 @@ const Header = () => {
           {" "}
           Hi, <span className="headerTitle"> my name is Murat</span>{" "}
         </div>
-        <div className="headerPara">I'm a web developer</div>
-        <div className="headerPara">
+        <Para fontFamily="inconsalata" fontWeight="500" lineHeight="2rem">
+          I'm a web developer
+        </Para>
+        <Para fontFamily="inconsalata" fontWeight="500" lineHeight="2rem">
           I build things for web 3 as well as the good ol' fashioned web 2
-        </div>
+        </Para>
+        <Button backgroundColor="black">click</Button>
       </div>
       <div className="imageContainer">
         <img src={image} alt="" className="profileImage" />
