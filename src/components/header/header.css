@@ -18,6 +18,7 @@
 .imageContainer {
   width: 300px;
   height: 300px;
+  margin-left: 5rem;
 }
 .profileImage {
   width: auto;
@@ -28,7 +29,7 @@
   width: 100vw;
 }
 .headerTextGroup {
-  margin-right: 5rem;
+  /* margin-right: 3rem; */
 }
 .headerBigTitle {
   font-size: 10rem;
@@ -56,6 +57,9 @@
   .headerTitle {
     font-size: auto;
     font-size: 1.5rem;
+  }
+  .imageContainer {
+    margin-left: 0;
   }
 }
 @media only screen and (max-width: 768px) {
