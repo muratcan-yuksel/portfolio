@@ -1,0 +1,10 @@
+.navbarComp {
+  background: #ffe01b !important;
+  /* border-bottom: 2px dashed black; */
+  transition: 0.3s;
+}
+
+.navbarComp:hover {
+  background-color: white !important;
+  color: white;
+}
