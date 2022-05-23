@@ -14,6 +14,6 @@ export const Para = styled.p`
   border-radius: 1rem;
   transition: 0.3s;
   &:hover {
-    background-color: white;
+    background-color: ${(props) => props.hoverBg};
   }
 `;

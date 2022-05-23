@@ -16,6 +16,7 @@ const Header = () => {
           Hi, <span className="headerTitle"> my name is Murat</span>{" "}
         </div>
         <Para
+          hoverBg="white"
           fontFamily="inconsalata"
           fontWeight="500"
           lineHeight="2rem"
@@ -24,6 +25,7 @@ const Header = () => {
           I'm a web developer
         </Para>
         <Para
+          hoverBg="white"
           fontFamily="inconsalata"
           fontWeight="500"
           lineHeight="2rem"
@@ -42,6 +44,7 @@ const Header = () => {
             <p className="headerButtonText">contact me</p>
           </Button>
           <Para
+            hoverBg="var(--yellow-bg)"
             margin="0 10px"
             fontFamily="inconsalata"
             fontWeight="500"
