@@ -8,6 +8,9 @@ export const Para = styled.p`
   margin: ${(props) => props.margin};
   height: ${(props) => props.height};
   width: ${(props) => props.width};
+  @media (max-width: 768px) {
+    text-align: ${(props) => props.textAlign};
+  }
   border-radius: 1rem;
   transition: 0.3s;
   &:hover {

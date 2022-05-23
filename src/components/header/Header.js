@@ -28,6 +28,7 @@ const Header = () => {
           fontWeight="500"
           lineHeight="2rem"
           padding="0 10px"
+          textAlign="center"
         >
           I build things for web 3 as well as the good ol' fashioned web 2
         </Para>

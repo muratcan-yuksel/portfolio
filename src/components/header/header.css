@@ -8,7 +8,7 @@
 }
 
 .headerComponent {
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   background: var(--yellow-bg);
   color: black;
@@ -64,7 +64,7 @@
 }
 @media only screen and (max-width: 768px) {
   .headerComponent {
-    height: 80%;
+    height: 100%;
   }
   .imageContainer {
     width: 100vw;
@@ -85,7 +85,7 @@
 }
 @media only screen and (max-width: 576px) {
   .headerComponent {
-    padding-top: 2rem;
+    /* padding-top: 5rem; */
   }
   /* .headerTextGroup {
     align-items: flex-start;
