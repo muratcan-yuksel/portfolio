@@ -8,12 +8,14 @@ export const Button = styled.button`
   background-color: ${(props) => props.backgroundColor};
   color: ${(props) => props.color};
   font-size: 1.5rem;
-  border: 2px solid white;
+  /* border: 2px solid white; */
+  border: ${(props) => props.border};
   border-radius: 1rem;
   padding: 10px;
 
   &:hover {
-    background-color: var(--yellow-bg);
+    /* background-color: var(--yellow-bg); */
+    background-color: ${(props) => props.bgColor};
     color: ${(props) => props.hoverColor};
     font-size: 2rem;
   }

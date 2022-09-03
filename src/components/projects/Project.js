@@ -14,14 +14,19 @@ const Project = ({ id, img, title, desc }) => {
       <div className="right d-flex flex-column justify-content-center align-items-start">
         <div className="title justify-self-center">{title} </div>
         <Para
+          className="desc"
           fontFamily="inconsalata"
           fontWeight="500"
           lineHeight="2rem"
-          className="desc"
         >
           {desc}{" "}
         </Para>
-        <Button />
+        <Button
+          backgroundColor="white"
+          border="2px solid red"
+          color="black"
+          hoverColor="red"
+        />
       </div>
     </div>
   );
