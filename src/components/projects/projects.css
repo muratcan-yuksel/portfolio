@@ -25,8 +25,11 @@
   height: auto;
   width: auto;
   /* text-decoration: underline; */
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .buttons {
   width: 100%;
+}
+.projectLink {
+  margin-right: 1rem;
 }

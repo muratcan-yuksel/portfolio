@@ -22,7 +22,7 @@ const Project = ({ id, img, title, desc, buttonTexts }) => {
         >
           {desc}{" "}
         </Para>
-        <div className="buttons d-flex justify-content-evenly">
+        <div className="buttons d-flex justify-content-start">
           {buttonTexts.map((e, index) => {
             return (
               <a
