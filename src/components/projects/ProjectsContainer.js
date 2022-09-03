@@ -12,14 +12,21 @@ const ProjectsContainer = () => {
       title: "Binance",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
       // hasArticle: true,
-      buttonTexts: ["Live Demo", "Source Code", "Relevant Article"],
+      buttonTexts: [
+        { text: "Live Demo", link: "https://www.theodinproject.com/" },
+        { text: "Source Code", link: "https://www.theodinproject.com/" },
+        { text: "Relevant Article", link: "https://www.theodinproject.com/" },
+      ],
     },
     {
       id: 2,
       img: mathimals,
       title: "Mathimals",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-      buttonTexts: ["Live Demo", "Source Code"],
+      buttonTexts: [
+        { text: "Live Demo", link: "https://www.theodinproject.com/" },
+        { text: "Source Code", link: "https://www.theodinproject.com/" },
+      ],
     },
   ];
   return (
