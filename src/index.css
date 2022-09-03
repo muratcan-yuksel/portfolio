@@ -1,3 +1,12 @@
+@font-face {
+  font-family: openSans;
+  src: url(./assets//fonts/openSans.ttf);
+}
+@font-face {
+  font-family: inconsalata;
+  src: url(./assets//fonts/Inconsolata.ttf);
+}
+
 :root {
   --yellow-bg: #ffe01b;
   --grey: #403b3b;

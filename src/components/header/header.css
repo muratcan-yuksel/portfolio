@@ -1,11 +1,13 @@
-@font-face {
+/* I comment these out as I imported them in index.css */
+
+/* @font-face {
   font-family: openSans;
   src: url(../../assets//fonts/openSans.ttf);
 }
 @font-face {
   font-family: inconsalata;
   src: url(../../assets//fonts/Inconsolata.ttf);
-}
+} */
 
 .headerComponent {
   height: 90vh;

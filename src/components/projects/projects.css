@@ -10,3 +10,11 @@
   height: 100%;
   /* object-fit: contain; */
 }
+.bigTitle {
+  font-size: 3rem;
+  font-family: openSans;
+  height: auto;
+  width: auto;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
