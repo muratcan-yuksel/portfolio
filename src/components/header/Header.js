@@ -42,6 +42,10 @@ const Header = () => {
             hoverColor="black"
             border="2px solid white"
             bgColor="var(--yellow-bg)"
+            fontSize="1.5rem"
+            fontSizeHover="2rem"
+            height="5rem"
+            minWidth="10rem"
           >
             <p className="headerButtonText">contact me</p>
           </Button>

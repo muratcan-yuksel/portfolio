@@ -3,7 +3,8 @@ import { Button } from "../styled-components/Button.styled";
 import { Para } from "../styled-components/Para.styled";
 import "./projects.css";
 
-const Project = ({ id, img, title, desc }) => {
+const Project = ({ id, img, title, desc, buttonTexts }) => {
+  const buttonsForLinksArray = [{}];
   return (
     <div className="project d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-evenly align-items-md-center">
       <div className="left">
@@ -21,12 +22,21 @@ const Project = ({ id, img, title, desc }) => {
         >
           {desc}{" "}
         </Para>
-        <Button
-          backgroundColor="white"
-          border="2px solid red"
-          color="black"
-          hoverColor="red"
-        />
+        {buttonTexts.map((text, index) => {
+          return (
+            <Button
+              backgroundColor="white"
+              border="1px solid rgba(0,124,137,.3)"
+              borderHover="1px solid  #004e56"
+              color="#004e56"
+              fontSize="1rem"
+              height="3.5rem"
+              minWidth="8rem"
+            >
+              {text}
+            </Button>
+          );
+        })}
       </div>
     </div>
   );

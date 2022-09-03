@@ -11,12 +11,15 @@ const ProjectsContainer = () => {
       img: binanceImg,
       title: "Binance",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+      // hasArticle: true,
+      buttonTexts: ["Live Demo", "Source Code", "Relevant Article"],
     },
     {
       id: 2,
       img: mathimals,
       title: "Mathimals",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+      buttonTexts: ["Live Demo", "Source Code"],
     },
   ];
   return (
