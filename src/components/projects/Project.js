@@ -22,21 +22,23 @@ const Project = ({ id, img, title, desc, buttonTexts }) => {
         >
           {desc}{" "}
         </Para>
-        {buttonTexts.map((text, index) => {
-          return (
-            <Button
-              backgroundColor="white"
-              border="1px solid rgba(0,124,137,.3)"
-              borderHover="1px solid  #004e56"
-              color="#004e56"
-              fontSize="1rem"
-              height="3.5rem"
-              minWidth="8rem"
-            >
-              {text}
-            </Button>
-          );
-        })}
+        <div className="buttons d-flex justify-content-evenly">
+          {buttonTexts.map((text, index) => {
+            return (
+              <Button
+                backgroundColor="white"
+                border="1px solid rgba(0,124,137,.3)"
+                borderHover="1px solid  #004e56"
+                color="#004e56"
+                fontSize="1rem"
+                height="3.5rem"
+                minWidth="8rem"
+              >
+                {text}
+              </Button>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
