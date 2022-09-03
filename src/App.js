@@ -7,7 +7,7 @@ import ProjectsContainer from "./components/projects/ProjectsContainer";
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <NavbarComponent />
       <Header />
       <ProjectsContainer />
