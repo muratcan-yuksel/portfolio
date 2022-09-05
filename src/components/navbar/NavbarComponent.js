@@ -7,30 +7,14 @@ const NavbarComponent = () => {
   const [color, setColor] = useState(true);
 
   const changeColor = () => {
-    if (window.scrollY <= 60) {
+    if (window.scrollY <= 0) {
       setColor(true);
-      console.log("true");
-      console.log(window.scrollY);
     } else {
       setColor(false);
-      console.log("false");
-      console.log(window.scrollY);
     }
   };
 
-  function foo(event) {
-    console.log("foo is here");
-  }
-
   window.addEventListener("scroll", changeColor, true);
-
-  // window.addEventListener(
-  //   "scroll",
-  //   function (event) {
-  //     console.log("scroll");
-  //   },
-  //   true
-  // );
 
   return (
     <div>
