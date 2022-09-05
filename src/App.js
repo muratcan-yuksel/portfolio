@@ -8,10 +8,12 @@ import ProjectsContainer from "./components/projects/ProjectsContainer";
 const App = () => {
   return (
     <div className="App">
-      <NavbarComponent />
-      <Header />
-      <ProjectsContainer />
-      <About />
+      <div className="wrapper">
+        <NavbarComponent />
+        <Header />
+        <ProjectsContainer />
+        <About />
+      </div>
     </div>
   );
 };
