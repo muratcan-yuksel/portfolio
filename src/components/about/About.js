@@ -49,6 +49,31 @@ const About = () => {
       year: "2020",
     },
   ];
+
+  const work = {
+    techWork: [
+      {
+        name: "Frontend Developer (VueJs)",
+        company: "DijitalGaraj",
+        location: "remote",
+        year: "2021-22",
+      },
+    ],
+    nonTechWork: [
+      {
+        name: "Marketing Intern",
+        company: "Langues Immersion Pro",
+        location: "Montauban/France",
+        year: "2016-2020",
+      },
+      {
+        name: "Journalism Intern",
+        company: "Inter-Media Bruxelles",
+        location: "Brussels/Belgium",
+        year: "2020-2021",
+      },
+    ],
+  };
   return (
     <div id="aboutComponent">
       <div className="aboutWrapper d-flex flex-column-reverse flex-md-column">
@@ -82,7 +107,41 @@ const About = () => {
           </div>
         </div>
         <div className="below d-flex justify-content-center">
-          <div className="work">work</div>
+          <div className="work">
+            work
+            <div className="techWork">
+              tech work
+              {work.techWork.map((e, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="workItem d-flex flex-column align-items-center"
+                  >
+                    <div className="workTitle">{e.name}</div>
+                    <div className="workCompany">{e.company}</div>
+                    <div className="workLocation">{e.location}</div>
+                    <div className="workYear">{e.year}</div>
+                  </div>
+                );
+              })}
+            </div>
+            <div className="nonTectWork">
+              non-tech work
+              {work.nonTechWork.map((e, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="workItem d-flex flex-column align-items-center"
+                  >
+                    <div className="workTitle">{e.name}</div>
+                    <div className="workCompany">{e.company}</div>
+                    <div className="workLocation">{e.location}</div>
+                    <div className="workYear">{e.year}</div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </div>
