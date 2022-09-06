@@ -6,6 +6,9 @@ const About = () => {
     "CSS",
     "JavaScript (ES6)",
     "React",
+    "Solidity",
+    "Hardhat",
+    "EthersJs",
     "VueJs",
     "Redux",
     "Node",
@@ -15,15 +18,10 @@ const About = () => {
     "Git",
     "GitHub",
     "Bootstrap",
-    "Solidity",
-    "Hardhat",
-    "EthersJs",
     "Jest",
     "Mocha",
     "Chai",
     "React Testing Library",
-    "Heroku",
-    "Netlify",
     "Postman",
     "Jira",
   ];
@@ -112,8 +110,8 @@ const About = () => {
           <div className="work">
             {/* this bigTitle class is located at projects.css */}
             <div className="bigTitle">Work Experience</div>
-            <div className="techWork">
-              tech work
+            <div className="techWork d-flex flex-column align-items-center">
+              <div className="workIndicator">Tech Work</div>
               {work.techWork.map((e, index) => {
                 return (
                   <div
@@ -128,8 +126,8 @@ const About = () => {
                 );
               })}
             </div>
-            <div className="nonTectWork">
-              non-tech work
+            <div className="nonTechWork d-flex flex-column align-items-center">
+              <div className="workIndicator">Non-Tech Work</div>
               {work.nonTechWork.map((e, index) => {
                 return (
                   <div
