@@ -17,13 +17,19 @@ import reactLogo from "../../assets/icons/react-seeklogo.com.svg";
 import reduxLogo from "../../assets/icons/redux-seeklogo.com.svg";
 import testingLogo from "../../assets/icons/testing-library-seeklogo.com.svg";
 import vueLogo from "../../assets/icons/vuejs-seeklogo.com.svg";
+import solidityLogo from "../../assets/icons/solidity-seeklogo.com.svg";
+import hardhatLogo from "../../assets/icons/hardhat-seeklogo.com.svg";
 
 const About = () => {
   const icons = [
     jsLogo,
     reactLogo,
-    reduxLogo,
+    solidityLogo,
+    hardhatLogo,
+    ethersLogo,
     vueLogo,
+    reduxLogo,
+    bootstrapLogo,
     nodeLogo,
     mongoLogo,
     expressLogo,
@@ -34,33 +40,7 @@ const About = () => {
     jiraLogo,
     gitLogo,
     githubLogo,
-    bootstrapLogo,
-    ethersLogo,
   ];
-  // const techStack = [
-  //   "HTML",
-  //   "CSS",
-  //   "JavaScript (ES6)",
-  //   "React",
-  //   "Solidity",
-  //   "Hardhat",
-  //   "EthersJs",
-  //   "VueJs",
-  //   "Redux",
-  //   "Node",
-  //   "Express",
-  //   "MongoDB",
-  //   "Mongoose",
-  //   "Git",
-  //   "GitHub",
-  //   "Bootstrap",
-  //   "Jest",
-  //   "Mocha",
-  //   "Chai",
-  //   "React Testing Library",
-  //   "Postman",
-  //   "Jira",
-  // ];
 
   const education = [
     {
@@ -119,11 +99,6 @@ const About = () => {
               <div className="bigTitle">My Tech Stack</div>
             </div>
             <div className="stacks d-flex justify-content-center flex-wrap ">
-              {/* {techStack.map((stack, index) => (
-                <div key={index} className="stack">
-                  {stack}
-                </div>
-              ))} */}
               {icons.map((icon, index) => {
                 return (
                   <div key={index} className="logoContainer">
@@ -131,9 +106,6 @@ const About = () => {
                   </div>
                 );
               })}
-              {/* <div className="iconContainer">
-                <img src={ethersIcon} alt="" />
-              </div> */}
             </div>
           </div>
           <div className="education d-flex flex-column align-items-center">
