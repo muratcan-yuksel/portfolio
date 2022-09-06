@@ -1,9 +1,8 @@
 #aboutComponent {
   background: #f6f6f4;
-  height: 500px;
+  height: 100%;
 }
 .aboutWrapper {
-  border: 2px solid blue;
 }
 .above {
   height: 100%;
@@ -14,11 +13,15 @@
 }
 .techStack {
   width: 100%;
-  height: 100%;
+  height: auto;
+  border: solid;
 }
 .education {
   width: 100%;
-  border: 1px solid orange;
+}
+.educationItem {
+  width: 100%;
+  margin: 1rem;
 }
 .work {
 }
@@ -26,5 +29,5 @@
   overflow: auto !important;
 }
 .stack {
-  margin: 2rem;
+  margin: 0 2rem 1.2rem 0;
 }

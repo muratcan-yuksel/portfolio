@@ -50,7 +50,7 @@ const About = () => {
     },
   ];
   return (
-    <div id="aboutComponent   ">
+    <div id="aboutComponent">
       <div className="aboutWrapper d-flex flex-column-reverse flex-md-column">
         <div className="above d-flex flex-column flex-md-row justify-content-md-around">
           <div className="techStack d-flex flex-column justify-content-center">
@@ -65,7 +65,21 @@ const About = () => {
               ))}
             </ul>
           </div>
-          <div className="education">education</div>
+          <div className="education d-flex flex-column align-items-center">
+            education
+            {education.map((e, index) => {
+              return (
+                <div
+                  key={index}
+                  className="educationItem d-flex flex-column align-items-center"
+                >
+                  <div className="educationTitle">{e.name}</div>
+                  <div className="educationUniversity">{e.university}</div>
+                  <div className="educationYear">{e.year}</div>
+                </div>
+              );
+            })}
+          </div>
         </div>
         <div className="below d-flex justify-content-center">
           <div className="work">work</div>
