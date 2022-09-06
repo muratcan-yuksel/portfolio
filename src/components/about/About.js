@@ -1,5 +1,7 @@
 import React from "react";
 import "./about.css";
+import ethersIcon from "../../assets/icons/ethers-seeklogo.com.svg";
+import mochaIcon from "../../assets/icons/mocha-seeklogo.com.svg";
 const About = () => {
   const techStack = [
     "HTML",
@@ -25,6 +27,8 @@ const About = () => {
     "Postman",
     "Jira",
   ];
+
+  const icons = [ethersIcon, mochaIcon];
   const education = [
     {
       name: "Semiotics MA",
@@ -82,11 +86,21 @@ const About = () => {
               <div className="bigTitle">My Tech Stack</div>
             </div>
             <div className="stacks d-flex justify-content-center flex-wrap ">
-              {techStack.map((stack, index) => (
+              {/* {techStack.map((stack, index) => (
                 <div key={index} className="stack">
                   {stack}
                 </div>
-              ))}
+              ))} */}
+              {icons.map((icon, index) => {
+                return (
+                  <div key={index} className="iconContainer">
+                    <img src={icon} className="icon" alt="icon" />
+                  </div>
+                );
+              })}
+              {/* <div className="iconContainer">
+                <img src={ethersIcon} alt="" />
+              </div> */}
             </div>
           </div>
           <div className="education d-flex flex-column align-items-center">
