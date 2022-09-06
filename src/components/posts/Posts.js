@@ -7,15 +7,34 @@ const Posts = () => {
   const url = "https://dev.to/api/articles?username=muratcanyuksel";
 
   const [data, setData] = useState([]);
+  const [showMore, setShowMore] = useState(true);
+  const [fullPostsArray, setFullPostsArray] = useState([]);
 
   const getData = async () => {
     try {
       const req = await axios.get(url);
       const res = await req.data;
-      setData(res);
+      setData(res.slice(0, 5));
+      setFullPostsArray(res);
       console.log(res);
     } catch (error) {
       console.log(error);
+    }
+  };
+
+  const showHide = () => {
+    setShowMore(!showMore);
+    console.log("clicked");
+    slicePosts();
+  };
+
+  const slicePosts = () => {
+    if (showMore) {
+      console.log("hey");
+      setData(fullPostsArray);
+    } else {
+      console.log("ho");
+      setData(data.slice(0, 5));
     }
   };
 
@@ -25,7 +44,7 @@ const Posts = () => {
   }, []);
   return (
     <div>
-      Posts
+      <div className="postsTitle">Blog Posts</div>{" "}
       <div className="wrapper d-flex justify-content-center flex-wrap">
         {data.map((item) => {
           return (
@@ -52,6 +71,11 @@ const Posts = () => {
           );
         })}
       </div>
+      <div className="fillerDots">...</div>
+      <button onClick={showHide}>
+        {" "}
+        {showMore ? "Show more posts" : "Show less posts"}{" "}
+      </button>
     </div>
   );
 };
