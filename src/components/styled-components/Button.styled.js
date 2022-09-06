@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Button = styled.button`
   height: ${(props) => props.height};
   min-width: ${(props) => props.minWidth};
-  width: auto;
+  width: ${(props) => props.width};
   transition: 0.3s;
   background-color: ${(props) => props.backgroundColor};
   color: ${(props) => props.color};

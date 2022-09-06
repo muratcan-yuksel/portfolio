@@ -8,7 +8,9 @@
   height: 100%;
 }
 .below {
-  background: #fbeeca;
+  /* old background color */
+  /* background: #fbeeca; */
+  background: #ffe01b;
 }
 .aboutTitle {
 }
