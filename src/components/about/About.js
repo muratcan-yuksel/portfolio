@@ -53,7 +53,7 @@ const About = () => {
     <div id="aboutComponent">
       <div className="aboutWrapper d-flex flex-column-reverse flex-md-column">
         <div className="above d-flex flex-column flex-md-row justify-content-md-around">
-          <div className="techStack d-flex flex-column justify-content-center">
+          <div className="techStack d-flex flex-column ">
             <div className="aboutTitle d-flex justify-content-center">
               <div>My Tech Stack</div>
             </div>
