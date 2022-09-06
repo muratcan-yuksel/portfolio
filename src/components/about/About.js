@@ -1,34 +1,67 @@
 import React from "react";
 import "./about.css";
-import ethersIcon from "../../assets/icons/ethers-seeklogo.com.svg";
-import mochaIcon from "../../assets/icons/mocha-seeklogo.com.svg";
-const About = () => {
-  const techStack = [
-    "HTML",
-    "CSS",
-    "JavaScript (ES6)",
-    "React",
-    "Solidity",
-    "Hardhat",
-    "EthersJs",
-    "VueJs",
-    "Redux",
-    "Node",
-    "Express",
-    "MongoDB",
-    "Mongoose",
-    "Git",
-    "GitHub",
-    "Bootstrap",
-    "Jest",
-    "Mocha",
-    "Chai",
-    "React Testing Library",
-    "Postman",
-    "Jira",
-  ];
+import ethersLogo from "../../assets/icons/ethers-seeklogo.com.svg";
+import mochaLogo from "../../assets/icons/mocha-seeklogo.com.svg";
+import bootstrapLogo from "../../assets/icons/bootstrap-seeklogo.com.svg";
+// !!! need html, css and maybe mongoose icon in svg format
+import expressLogo from "../../assets/icons/express-seeklogo.com.svg";
+import gitLogo from "../../assets/icons/git-seeklogo.com.svg";
+import githubLogo from "../../assets/icons/github-seeklogo.com.svg";
+import jsLogo from "../../assets/icons/javascript-js-seeklogo.com.svg";
+import jestLogo from "../../assets/icons/jest-seeklogo.com.svg";
+import jiraLogo from "../../assets/icons/jira-seeklogo.com.svg";
+import mongoLogo from "../../assets/icons/mongodb-seeklogo.com.svg";
+import nodeLogo from "../../assets/icons/nodejs-seeklogo.com.svg";
+import postmanLogo from "../../assets/icons/postman-seeklogo.com.svg";
+import reactLogo from "../../assets/icons/react-seeklogo.com.svg";
+import reduxLogo from "../../assets/icons/redux-seeklogo.com.svg";
+import testingLogo from "../../assets/icons/testing-library-seeklogo.com.svg";
+import vueLogo from "../../assets/icons/vuejs-seeklogo.com.svg";
 
-  const icons = [ethersIcon, mochaIcon];
+const About = () => {
+  const icons = [
+    jsLogo,
+    reactLogo,
+    reduxLogo,
+    vueLogo,
+    nodeLogo,
+    mongoLogo,
+    expressLogo,
+    mochaLogo,
+    jestLogo,
+    testingLogo,
+    postmanLogo,
+    jiraLogo,
+    gitLogo,
+    githubLogo,
+    bootstrapLogo,
+    ethersLogo,
+  ];
+  // const techStack = [
+  //   "HTML",
+  //   "CSS",
+  //   "JavaScript (ES6)",
+  //   "React",
+  //   "Solidity",
+  //   "Hardhat",
+  //   "EthersJs",
+  //   "VueJs",
+  //   "Redux",
+  //   "Node",
+  //   "Express",
+  //   "MongoDB",
+  //   "Mongoose",
+  //   "Git",
+  //   "GitHub",
+  //   "Bootstrap",
+  //   "Jest",
+  //   "Mocha",
+  //   "Chai",
+  //   "React Testing Library",
+  //   "Postman",
+  //   "Jira",
+  // ];
+
   const education = [
     {
       name: "Semiotics MA",
@@ -93,8 +126,8 @@ const About = () => {
               ))} */}
               {icons.map((icon, index) => {
                 return (
-                  <div key={index} className="iconContainer">
-                    <img src={icon} className="icon" alt="icon" />
+                  <div key={index} className="logoContainer">
+                    <img src={icon} className="logo" alt="icon" />
                   </div>
                 );
               })}
