@@ -8,6 +8,7 @@
   height: 100%;
 }
 .below {
+  background: #fbeeca;
 }
 .aboutTitle {
 }
@@ -29,6 +30,8 @@
 }
 .stack {
   margin: 2rem;
+  font-weight: 500;
+  color: #172e38;
 }
 @media only screen and (max-width: 1200px) {
   .stack {
@@ -39,4 +42,13 @@
   .stack {
     margin: 0 3rem 2rem 0;
   }
+}
+.educationTitle {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.educationUniversity {
+  font-size: 1.1rem;
+}
+.educationYear {
 }

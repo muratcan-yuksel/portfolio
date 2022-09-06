@@ -21,6 +21,7 @@ const Header = () => {
           fontWeight="500"
           lineHeight="2rem"
           padding="0 10px"
+          color="#172e38"
         >
           I'm a web developer
         </Para>
@@ -31,6 +32,7 @@ const Header = () => {
           lineHeight="2rem"
           padding="0 10px"
           textAlign="center"
+          color="#172e38"
         >
           I build things for web 3 as well as the good ol' fashioned web 2
         </Para>

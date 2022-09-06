@@ -4,6 +4,7 @@ export const Para = styled.p`
   font-weight: ${(props) => props.fontWeight};
   font-family: ${(props) => props.fontFamily};
   line-height: ${(props) => props.lineHeight};
+  color: ${(props) => props.color};
   padding: ${(props) => props.padding};
   margin: ${(props) => props.margin};
   height: ${(props) => props.height};

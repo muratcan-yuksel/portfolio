@@ -80,18 +80,20 @@ const About = () => {
         <div className="above d-flex flex-column flex-md-row justify-content-md-around">
           <div className="techStack d-flex flex-column ">
             <div className="aboutTitle d-flex justify-content-center">
-              <div>My Tech Stack</div>
+              {/* this bigTitle class is located at projects.css */}
+              <div className="bigTitle">My Tech Stack</div>
             </div>
-            <ul className="stacks d-flex justify-content-center flex-wrap ">
+            <div className="stacks d-flex justify-content-center flex-wrap ">
               {techStack.map((stack, index) => (
-                <li key={index} className="stack">
+                <div key={index} className="stack">
                   {stack}
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
           <div className="education d-flex flex-column align-items-center">
-            education
+            {/* this bigTitle class is located at projects.css */}
+            <div className="bigTitle">Education</div>
             {education.map((e, index) => {
               return (
                 <div
@@ -108,7 +110,8 @@ const About = () => {
         </div>
         <div className="below d-flex justify-content-center">
           <div className="work">
-            work
+            {/* this bigTitle class is located at projects.css */}
+            <div className="bigTitle">Work Experience</div>
             <div className="techWork">
               tech work
               {work.techWork.map((e, index) => {

@@ -19,6 +19,7 @@ const Project = ({ id, img, title, desc, buttonTexts }) => {
           fontFamily="inconsalata"
           fontWeight="500"
           lineHeight="2rem"
+          color="#172e38"
         >
           {desc}{" "}
         </Para>
