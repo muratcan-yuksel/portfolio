@@ -79,13 +79,13 @@ const About = () => {
         name: "Marketing Intern",
         company: "Langues Immersion Pro",
         location: "Montauban/France",
-        year: "2016-2020",
+        year: "2018",
       },
       {
         name: "Journalism Intern",
         company: "Inter-Media Bruxelles",
         location: "Brussels/Belgium",
-        year: "2020-2021",
+        year: "2016",
       },
     ],
   };
@@ -95,8 +95,7 @@ const About = () => {
         <div className="above d-flex flex-column flex-md-row justify-content-md-around">
           <div className="techStack d-flex flex-column ">
             <div className="aboutTitle d-flex justify-content-center">
-              {/* this bigTitle class is located at projects.css */}
-              <div className="bigTitle">My Tech Stack</div>
+              <div className="aboutBigtitle">My Tech Stack</div>
             </div>
             <div className="stacks d-flex justify-content-center flex-wrap ">
               {icons.map((icon, index) => {
@@ -109,8 +108,7 @@ const About = () => {
             </div>
           </div>
           <div className="education d-flex flex-column align-items-center">
-            {/* this bigTitle class is located at projects.css */}
-            <div className="bigTitle">Education</div>
+            <div className="aboutBigtitle">Education</div>
             {education.map((e, index) => {
               return (
                 <div
@@ -126,9 +124,8 @@ const About = () => {
           </div>
         </div>
         <div className="below d-flex justify-content-center">
-          <div className="work">
-            {/* this bigTitle class is located at projects.css */}
-            <div className="bigTitle">Work Experience</div>
+          <div className="work d-flex flex-column align-items-center">
+            <div className="aboutBigtitle">Work Experience</div>
             <div className="techWork d-flex flex-column align-items-center">
               <div className="workIndicator">Tech Work</div>
               {work.techWork.map((e, index) => {
