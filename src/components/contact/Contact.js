@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import contactImg from "../../assets/images/contactImg.svg";
 import { Button } from "../styled-components/Button.styled";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleName = (e) => {
+    setName(e.target.value);
+  };
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+  const handleMsg = (e) => {
+    setMessage(e.target.value);
+  };
   const sendMail = (e) => {
     e.preventDefault();
     console.log(
@@ -16,10 +29,10 @@ const Contact = () => {
       process.env.REACT_APP_SERVICE_ID,
       process.env.REACT_APP_TEMPLATE_ID,
       {
-        to_name: "asdasd",
-        from_name: "asdad",
-        message: "asdasd",
-        reply_to: "asdasd",
+        to_name: "Murat",
+        from_name: name,
+        message: message,
+        from_email: email,
       },
       process.env.REACT_APP_PUBLIC_KEY
     );
@@ -37,17 +50,20 @@ const Contact = () => {
           type="text"
           name="name"
           className="formItem"
+          onChange={handleName}
         />
         <input
           placeholder="Your Email"
           type="email"
           name="email"
           className="formItem"
+          onChange={handleEmail}
         />
         <textarea
           placeholder="Your Message"
           name="message"
           className="textArea"
+          onChange={handleMsg}
         />
         <Button
           backgroundColor="#ff1255"
