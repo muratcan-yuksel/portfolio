@@ -2,8 +2,13 @@ import React from "react";
 import "./contact.css";
 import contactImg from "../../assets/images/contactImg.svg";
 import { Button } from "../styled-components/Button.styled";
-
+import emailjs from "@emailjs/browser";
+require("dotenv").config();
 const Contact = () => {
+  const sendMail = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div
       className="contactComponent d-flex flex-column flex-md-row justify-content-center align-items-center
@@ -35,6 +40,7 @@ const Contact = () => {
           border="2px solid white"
           fontSize="1.5rem"
           fontSizeHover="2rem"
+          onClick={sendMail}
         >
           Send
         </Button>
