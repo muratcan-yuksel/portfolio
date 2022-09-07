@@ -8,11 +8,22 @@
 }
 
 .formItem {
-  width: 30vw;
+  width: 38vw;
   margin: 5px 0;
+  height: 3rem;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 1rem;
+}
+.textArea {
+  border: none;
+  height: 8rem;
+  margin-bottom: 1rem;
+  padding: 10px 10px;
+  border-radius: 1rem;
 }
 .contactImgContainer {
-  width: 40vw;
+  width: 32vw;
   height: auto;
 }
 .contactImg {
@@ -25,5 +36,8 @@
     width: 60vw;
     height: auto;
     padding: 5px 5px;
+  }
+  .contactImgContainer {
+    display: none;
   }
 }

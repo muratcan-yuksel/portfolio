@@ -1,10 +1,14 @@
 import React from "react";
 import "./contact.css";
 import contactImg from "../../assets/images/contactImg.svg";
+import { Button } from "../styled-components/Button.styled";
 
 const Contact = () => {
   return (
-    <div className="contactComponent d-flex flex-column flex-md-row justify-content-around align-items-center">
+    <div
+      className="contactComponent d-flex flex-column flex-md-row justify-content-center align-items-center
+     justify-content-md-evenly align-items-md-center"
+    >
       {/* Contact */}
       <form className="formElement d-flex flex-column ">
         <input
@@ -22,10 +26,19 @@ const Contact = () => {
         <textarea
           placeholder="Your Message"
           name="message"
-          className="formItem"
+          className="textArea"
         />
-
-        <input type="submit" value="Submit" className="formItem" />
+        <Button
+          backgroundColor="#ff1255"
+          color="white"
+          hoverColor="black"
+          border="2px solid white"
+          fontSize="1.5rem"
+          fontSizeHover="2rem"
+        >
+          Send
+        </Button>
+        {/* <input type="submit" value="Submit" className="formItem" /> */}
       </form>
       <div className="contactImgContainer">
         <img className="contactImg" src={contactImg} alt="" />
