@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./contact.css";
 import contactImg from "../../assets/images/contactImg.svg";
 import { Button } from "../styled-components/Button.styled";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Popover from "react-bootstrap/Popover";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -16,7 +18,8 @@ const Contact = () => {
     setEmail(e.target.value);
   };
   const handleMsg = (e) => {
-    setMessage(e.target.value);
+    typeof e === "string" ? setMessage(e) : setMessage(e.target.value);
+    // setMessage(e.target.value);
   };
   const sendMail = (e) => {
     e.preventDefault();
@@ -25,18 +28,28 @@ const Contact = () => {
       process.env.REACT_APP_TEMPLATE_ID,
       process.env.REACT_APP_PUBLIC_KEY
     );
-    emailjs.send(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      {
-        to_name: "Murat",
-        from_name: name,
-        message: message,
-        from_email: email,
-      },
-      process.env.REACT_APP_PUBLIC_KEY
-    );
+    // emailjs.send(
+    //   process.env.REACT_APP_SERVICE_ID,
+    //   process.env.REACT_APP_TEMPLATE_ID,
+    //   {
+    //     to_name: "Murat",
+    //     from_name: name,
+    //     message: message,
+    //     from_email: email,
+    //   },
+    //   process.env.REACT_APP_PUBLIC_KEY
+    // );
+    handleMsg("");
   };
+
+  const popover = (
+    <Popover id="popover-basic">
+      <Popover.Header as="h3">Email sent!</Popover.Header>
+      <Popover.Body>
+        Thank you for your email! I'll get back to you as soon as possible.
+      </Popover.Body>
+    </Popover>
+  );
 
   return (
     <div
@@ -65,17 +78,20 @@ const Contact = () => {
           className="textArea"
           onChange={handleMsg}
         />
-        <Button
-          backgroundColor="#ff1255"
-          color="white"
-          hoverColor="black"
-          border="2px solid white"
-          fontSize="1.5rem"
-          fontSizeHover="2rem"
-          onClick={sendMail}
-        >
-          Send
-        </Button>
+
+        <OverlayTrigger trigger="click" placement="right" overlay={popover}>
+          <Button
+            backgroundColor="#ff1255"
+            color="white"
+            hoverColor="black"
+            border="2px solid white"
+            fontSize="1.5rem"
+            fontSizeHover="2rem"
+            onClick={sendMail}
+          >
+            Send
+          </Button>
+        </OverlayTrigger>
         {/* <input type="submit" value="Submit" className="formItem" /> */}
       </form>
       <div className="contactImgContainer">
