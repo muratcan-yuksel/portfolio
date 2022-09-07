@@ -3,10 +3,26 @@ import "./contact.css";
 import contactImg from "../../assets/images/contactImg.svg";
 import { Button } from "../styled-components/Button.styled";
 import emailjs from "@emailjs/browser";
-require("dotenv").config();
+
 const Contact = () => {
   const sendMail = (e) => {
     e.preventDefault();
+    console.log(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      process.env.REACT_APP_PUBLIC_KEY
+    );
+    emailjs.send(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      {
+        to_name: "asdasd",
+        from_name: "asdad",
+        message: "asdasd",
+        reply_to: "asdasd",
+      },
+      process.env.REACT_APP_PUBLIC_KEY
+    );
   };
 
   return (
