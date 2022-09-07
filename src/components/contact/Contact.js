@@ -10,35 +10,46 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [inputBools, setInputBools] = useState({
+    name: false,
+    email: false,
+    message: false,
+  });
 
   const handleName = (e) => {
     setName(e.target.value);
+    setInputBools({ ...inputBools, name: true });
+    console.log(inputBools);
   };
   const handleEmail = (e) => {
     setEmail(e.target.value);
+    setInputBools({ ...inputBools, email: true });
+    console.log(inputBools);
   };
   const handleMsg = (e) => {
-    // typeof e === "string" ? setMessage(e) : setMessage(e.target.value);
     setMessage(e.target.value);
+    setInputBools({ ...inputBools, message: true });
+    console.log(inputBools);
   };
   const sendMail = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-    emailjs.send(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      {
-        to_name: "Murat",
-        from_name: name,
-        message: message,
-        from_email: email,
-      },
-      process.env.REACT_APP_PUBLIC_KEY
-    );
-    handleMsg("");
-    setName("");
-    setEmail("");
-    setMessage("");
+    if (inputBools.name && inputBools.email && inputBools.message) {
+      console.log(name, email, message);
+      // emailjs.send(
+      //   process.env.REACT_APP_SERVICE_ID,
+      //   process.env.REACT_APP_TEMPLATE_ID,
+      //   {
+      //     to_name: "Murat",
+      //     from_name: name,
+      //     message: message,
+      //     from_email: email,
+      //   },
+      //   process.env.REACT_APP_PUBLIC_KEY
+      // );
+      setName("");
+      setEmail("");
+      setMessage("");
+    }
   };
 
   const popover = (
