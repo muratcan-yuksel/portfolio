@@ -24,18 +24,18 @@ const Contact = () => {
   const sendMail = (e) => {
     e.preventDefault();
     console.log(name, email, message);
-    // emailjs.send(
-    //   process.env.REACT_APP_SERVICE_ID,
-    //   process.env.REACT_APP_TEMPLATE_ID,
-    //   {
-    //     to_name: "Murat",
-    //     from_name: name,
-    //     message: message,
-    //     from_email: email,
-    //   },
-    //   process.env.REACT_APP_PUBLIC_KEY
-    // );
-    // handleMsg("");
+    emailjs.send(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      {
+        to_name: "Murat",
+        from_name: name,
+        message: message,
+        from_email: email,
+      },
+      process.env.REACT_APP_PUBLIC_KEY
+    );
+    handleMsg("");
     setName("");
     setEmail("");
     setMessage("");
@@ -51,53 +51,55 @@ const Contact = () => {
   );
 
   return (
-    <div
-      className="contactComponent d-flex flex-column flex-md-row justify-content-center align-items-center
+    <div className="contactComponent d-flex flex-column">
+      <div className="contactTitle align-self-center">Contact Me</div>
+      <div
+        className="contactWrapper d-flex flex-column flex-md-row justify-content-center align-items-center
      justify-content-md-evenly align-items-md-center"
-    >
-      {/* Contact */}
-      <form className="formElement d-flex flex-column ">
-        <input
-          placeholder="Your Name"
-          type="text"
-          name="name"
-          className="formItem"
-          onChange={handleName}
-          value={name}
-        />
-        <input
-          placeholder="Your Email"
-          type="email"
-          name="email"
-          className="formItem"
-          onChange={handleEmail}
-          value={email}
-        />
-        <textarea
-          placeholder="Your Message"
-          name="message"
-          className="textArea"
-          onChange={handleMsg}
-          value={message}
-        />
+      >
+        <form className="formElement d-flex flex-column ">
+          <input
+            placeholder="Your Name"
+            type="text"
+            name="name"
+            className="formItem"
+            onChange={handleName}
+            value={name}
+          />
+          <input
+            placeholder="Your Email"
+            type="email"
+            name="email"
+            className="formItem"
+            onChange={handleEmail}
+            value={email}
+          />
+          <textarea
+            placeholder="Your Message"
+            name="message"
+            className="textArea"
+            onChange={handleMsg}
+            value={message}
+          />
 
-        <OverlayTrigger trigger="click" placement="right" overlay={popover}>
-          <Button
-            backgroundColor="#ff1255"
-            color="white"
-            hoverColor="black"
-            border="2px solid white"
-            fontSize="1.5rem"
-            fontSizeHover="2rem"
-            onClick={sendMail}
-          >
-            Send
-          </Button>
-        </OverlayTrigger>
-        {/* <input type="submit" value="Submit" className="formItem" /> */}
-      </form>
-      <div className="contactImgContainer">
-        <img className="contactImg" src={contactImg} alt="" />
+          <OverlayTrigger trigger="click" placement="right" overlay={popover}>
+            <Button
+              backgroundColor="#ff1255"
+              color="white"
+              hoverColor="black"
+              border="2px solid white"
+              fontSize="1.5rem"
+              fontSizeHover="2rem"
+              onClick={sendMail}
+            >
+              Send
+            </Button>
+          </OverlayTrigger>
+          {/* <input type="submit" value="Submit" className="formItem" /> */}
+        </form>
+        <div className="contactImgContainer">
+          <img className="contactImg" src={contactImg} alt="" />
+        </div>
       </div>
     </div>
   );
