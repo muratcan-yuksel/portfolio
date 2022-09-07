@@ -6,6 +6,15 @@
   width: 100%;
   height: 100%;
 } */
+.postsBigTitle {
+  text-align: center;
+  font-size: 3rem;
+  font-family: openSans;
+  height: auto;
+  width: auto;
+  /* text-decoration: underline; */
+  margin-top: 1rem;
+}
 
 .card {
   width: 300px;
@@ -19,4 +28,7 @@
   font-weight: 600;
   font-family: openSans;
   margin: 5px;
+}
+.showBtn {
+  border: solid;
 }
