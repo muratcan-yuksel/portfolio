@@ -49,7 +49,9 @@ const Posts = () => {
         {data.map((item) => {
           return (
             <div
-              className="card d-flex flex-column justify-content-start align-items-end"
+              //this card is coming from bootstrap
+              //it might create problems in deployment
+              className="card d-flex flex-column justify-content-between align-items-end"
               key={item.id}
               style={{ background: item.cover_image }}
             >

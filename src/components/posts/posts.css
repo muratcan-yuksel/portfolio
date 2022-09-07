@@ -12,9 +12,11 @@
   height: 110px;
   /* border: solid; */
   margin: 1rem;
+  border: none !important;
+  background: #f6f6f4 !important;
 }
 .postTitle {
-  font-weight: 500;
+  font-weight: 600;
   font-family: openSans;
   margin: 5px;
 }
