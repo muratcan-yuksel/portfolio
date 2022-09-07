@@ -18,16 +18,12 @@ const Contact = () => {
     setEmail(e.target.value);
   };
   const handleMsg = (e) => {
-    typeof e === "string" ? setMessage(e) : setMessage(e.target.value);
-    // setMessage(e.target.value);
+    // typeof e === "string" ? setMessage(e) : setMessage(e.target.value);
+    setMessage(e.target.value);
   };
   const sendMail = (e) => {
     e.preventDefault();
-    console.log(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      process.env.REACT_APP_PUBLIC_KEY
-    );
+    console.log(name, email, message);
     // emailjs.send(
     //   process.env.REACT_APP_SERVICE_ID,
     //   process.env.REACT_APP_TEMPLATE_ID,
@@ -39,7 +35,10 @@ const Contact = () => {
     //   },
     //   process.env.REACT_APP_PUBLIC_KEY
     // );
-    handleMsg("");
+    // handleMsg("");
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   const popover = (
@@ -64,6 +63,7 @@ const Contact = () => {
           name="name"
           className="formItem"
           onChange={handleName}
+          value={name}
         />
         <input
           placeholder="Your Email"
@@ -71,12 +71,14 @@ const Contact = () => {
           name="email"
           className="formItem"
           onChange={handleEmail}
+          value={email}
         />
         <textarea
           placeholder="Your Message"
           name="message"
           className="textArea"
           onChange={handleMsg}
+          value={message}
         />
 
         <OverlayTrigger trigger="click" placement="right" overlay={popover}>
