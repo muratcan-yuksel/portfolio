@@ -1,18 +1,39 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8bcd7882.css",
-    "main.js": "/portfolio/static/js/main.a1096919.js",
+    "main.css": "/portfolio/static/css/main.df58f344.css",
+    "main.js": "/portfolio/static/js/main.c75eca16.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/openSans.ttf": "/portfolio/static/media/openSans.9c7806d7ef7d294f568e.ttf",
+    "static/media/mathimals.png": "/portfolio/static/media/mathimals.b291b245d29b6b4e4d68.png",
     "static/media/Inconsolata.ttf": "/portfolio/static/media/Inconsolata.94b76afc76b8cc1f354a.ttf",
+    "static/media/binance.png": "/portfolio/static/media/binance.2a9f9d15243607108862.png",
     "static/media/pp.jpg": "/portfolio/static/media/pp.0108c5d71fed045d0b95.jpg",
+    "static/media/testing-library-seeklogo.com.svg": "/portfolio/static/media/testing-library-seeklogo.com.95f68fd1c556f2a881a89b7a7590f9af.svg",
+    "static/media/mongodb-seeklogo.com.svg": "/portfolio/static/media/mongodb-seeklogo.com.153b7b440efa05666029a47da0d0baa0.svg",
+    "static/media/nodejs-seeklogo.com.svg": "/portfolio/static/media/nodejs-seeklogo.com.5a3a9ca294db0539884810b6e6eafedd.svg",
+    "static/media/express-seeklogo.com.svg": "/portfolio/static/media/express-seeklogo.com.7e85c5130978e3593e65a44112bc7390.svg",
+    "static/media/contactImg.svg": "/portfolio/static/media/contactImg.5b22bc6a734ca5a47c13db52c3cd1981.svg",
+    "static/media/react-seeklogo.com.svg": "/portfolio/static/media/react-seeklogo.com.ae62622598f39552abdcdb023e554c6f.svg",
+    "static/media/mocha-seeklogo.com.svg": "/portfolio/static/media/mocha-seeklogo.com.13788684c9887bc10fffd01e17164a4e.svg",
+    "static/media/jest-seeklogo.com.svg": "/portfolio/static/media/jest-seeklogo.com.9af4e60c6fab328c50bef879f9e60d25.svg",
+    "static/media/git-seeklogo.com.svg": "/portfolio/static/media/git-seeklogo.com.502148275cca62f4c99044cd1bb29f7d.svg",
+    "static/media/postman-seeklogo.com.svg": "/portfolio/static/media/postman-seeklogo.com.e65afafee644ce9fe8a727d01b403189.svg",
+    "static/media/hardhat-seeklogo.com.svg": "/portfolio/static/media/hardhat-seeklogo.com.1498fcd21d440a32094b53b33221f67b.svg",
+    "static/media/github-seeklogo.com.svg": "/portfolio/static/media/github-seeklogo.com.04ed74f38b41cdcbf14f80ae8cd0aa2b.svg",
+    "static/media/redux-seeklogo.com.svg": "/portfolio/static/media/redux-seeklogo.com.a95675408ae17c456965e2f09376c31a.svg",
+    "static/media/bootstrap-seeklogo.com.svg": "/portfolio/static/media/bootstrap-seeklogo.com.527d0fc09fb3280153c26f0046a517a9.svg",
+    "static/media/javascript-js-seeklogo.com.svg": "/portfolio/static/media/javascript-js-seeklogo.com.fd46ca41839433d73577989d86eb2fe2.svg",
+    "static/media/solidity-seeklogo.com.svg": "/portfolio/static/media/solidity-seeklogo.com.672a5aa17e624f5cde3387f1ed4d4ca6.svg",
+    "static/media/ethers-seeklogo.com.svg": "/portfolio/static/media/ethers-seeklogo.com.5aa78212fa00253d6e1c0e94d9c0abc5.svg",
+    "static/media/jira-seeklogo.com.svg": "/portfolio/static/media/jira-seeklogo.com.79401e798305efd2db7eaf75a868913b.svg",
     "index.html": "/portfolio/index.html",
-    "main.8bcd7882.css.map": "/portfolio/static/css/main.8bcd7882.css.map",
-    "main.a1096919.js.map": "/portfolio/static/js/main.a1096919.js.map",
+    "static/media/vuejs-seeklogo.com.svg": "/portfolio/static/media/vuejs-seeklogo.com.c286d2da48ffbf281f407b0c4c94271f.svg",
+    "main.df58f344.css.map": "/portfolio/static/css/main.df58f344.css.map",
+    "main.c75eca16.js.map": "/portfolio/static/js/main.c75eca16.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bcd7882.css",
-    "static/js/main.a1096919.js"
+    "static/css/main.df58f344.css",
+    "static/js/main.c75eca16.js"
   ]
 }
