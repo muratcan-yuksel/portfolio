@@ -3,7 +3,7 @@ import { Button } from "../styled-components/Button.styled";
 import { Para } from "../styled-components/Para.styled";
 import "./projects.css";
 
-const Project = ({ id, img, title, desc, buttonTexts }) => {
+const Project = ({ id, img, title, desc, techUsed, buttonTexts }) => {
   const buttonsForLinksArray = [{}];
   return (
     <div className="project d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-evenly align-items-md-center">
@@ -12,18 +12,26 @@ const Project = ({ id, img, title, desc, buttonTexts }) => {
           <img className="img" src={img} alt="" />
         </div>
       </div>
-      <div className="right d-flex flex-column justify-content-center align-items-start">
+      <div className="right d-flex flex-column justify-content-center align-items-center">
         <div className="title justify-self-center">{title} </div>
         <Para
-          className="desc"
+          className="desc d-flex flex-column justify-content-center align-items-center"
           fontFamily="inconsalata"
           fontWeight="500"
           lineHeight="2rem"
           color="#172e38"
         >
           {desc}{" "}
+          <div className="techUsed">
+            <ul className="  d-flex flex-wrap">
+              {techUsed.map((e) => {
+                return <li className="techUsedItem">{e}</li>;
+              })}
+            </ul>
+          </div>
         </Para>
-        <div className="buttons d-flex justify-content-start flex-wrap">
+
+        <div className="buttons d-flex justify-content-center flex-wrap">
           {buttonTexts.map((e, index) => {
             return (
               <a

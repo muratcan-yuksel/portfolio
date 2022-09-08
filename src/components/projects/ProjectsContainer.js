@@ -11,6 +11,19 @@ const ProjectsContainer = () => {
       img: binanceImg,
       title: "Binance",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+      techUsed: [
+        "React",
+        "Redux",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Express",
+        "MongoDB",
+        "Express",
+        "MongoDB",
+        "Express",
+        "MongoDB",
+      ],
       // hasArticle: true,
       buttonTexts: [
         { text: "Live Demo", link: "https://www.theodinproject.com/" },
@@ -23,6 +36,7 @@ const ProjectsContainer = () => {
       img: mathimals,
       title: "Mathimals",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+      techUsed: ["React", "Redux", "Node", "Express", "MongoDB"],
       buttonTexts: [
         { text: "Live Demo", link: "https://www.theodinproject.com/" },
         { text: "Source Code", link: "https://www.theodinproject.com/" },

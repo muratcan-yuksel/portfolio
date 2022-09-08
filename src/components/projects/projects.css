@@ -42,3 +42,9 @@
 .projectLink {
   margin-right: 1rem;
 }
+.techUsed {
+  width: 70%;
+}
+.techUsedItem {
+  margin: 0 1rem;
+}
