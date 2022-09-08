@@ -43,7 +43,7 @@ const Posts = () => {
     getData();
   }, []);
   return (
-    <div>
+    <div id="postsComponent">
       <div className="postsWrapper d-flex flex-column align-items-center">
         <div className="postsBigTitle">Blog Posts</div>{" "}
         <div className="wrapper d-flex align-items-center justify-content-center flex-wrap">

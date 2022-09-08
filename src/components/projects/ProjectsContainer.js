@@ -30,7 +30,7 @@ const ProjectsContainer = () => {
     },
   ];
   return (
-    <div className=" ">
+    <div id="projectsComponent">
       <div className="titleContainer d-flex justify-content-center">
         <div className="bigTitle">Most recent work</div>
       </div>

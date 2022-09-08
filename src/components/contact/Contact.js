@@ -71,69 +71,71 @@ const Contact = () => {
   };
 
   return (
-    <div className="contactComponent d-flex flex-column">
-      <div className="contactTitle align-self-center">Contact Me</div>
-      <div
-        className="contactWrapper d-flex flex-column flex-md-row justify-content-center align-items-center
+    <div id="contactComponent">
+      <div className="contactComponent d-flex flex-column">
+        <div className="contactTitle align-self-center">Contact Me</div>
+        <div
+          className="contactWrapper d-flex flex-column flex-md-row justify-content-center align-items-center
      justify-content-md-evenly align-items-md-center"
-      >
-        <form className="formElement d-flex flex-column ">
-          <input
-            placeholder="Your Name"
-            type="text"
-            name="name"
-            className="formItem"
-            onChange={handleName}
-            value={name}
-          />
-          <input
-            placeholder="Your Email"
-            type="email"
-            name="email"
-            className="formItem"
-            onChange={handleEmail}
-            value={email}
-          />
-          {regexCheck ? null : (
-            <Toast style={{ width: "100%" }}>
-              <Toast.Body style={{ width: "100%" }}>
-                {" "}
-                Please enter a valid email address.
-              </Toast.Body>
-            </Toast>
-          )}
-          <textarea
-            placeholder="Your Message"
-            name="message"
-            className="textArea"
-            onChange={handleMsg}
-            value={message}
-          />
+        >
+          <form className="formElement d-flex flex-column ">
+            <input
+              placeholder="Your Name"
+              type="text"
+              name="name"
+              className="formItem"
+              onChange={handleName}
+              value={name}
+            />
+            <input
+              placeholder="Your Email"
+              type="email"
+              name="email"
+              className="formItem"
+              onChange={handleEmail}
+              value={email}
+            />
+            {regexCheck ? null : (
+              <Toast style={{ width: "100%" }}>
+                <Toast.Body style={{ width: "100%" }}>
+                  {" "}
+                  Please enter a valid email address.
+                </Toast.Body>
+              </Toast>
+            )}
+            <textarea
+              placeholder="Your Message"
+              name="message"
+              className="textArea"
+              onChange={handleMsg}
+              value={message}
+            />
 
-          <Button
-            backgroundColor="#ff1255"
-            color="white"
-            hoverColor="black"
-            border="2px solid white"
-            fontSize="1.5rem"
-            fontSizeHover="2rem"
-            onClick={sendMail}
-          >
-            Send
-          </Button>
-          {/* <input type="submit" value="Submit" className="formItem" /> */}
-          {toastValue ? (
-            <Toast style={{ width: "100%" }}>
-              <Toast.Body style={{ width: "100%" }}>
-                {" "}
-                Thank you for your email! I'll get back to you as soon as
-                possible.
-              </Toast.Body>
-            </Toast>
-          ) : null}
-        </form>
-        <div className="contactImgContainer">
-          <img className="contactImg" src={contactImg} alt="" />
+            <Button
+              backgroundColor="#ff1255"
+              color="white"
+              hoverColor="black"
+              border="2px solid white"
+              fontSize="1.5rem"
+              fontSizeHover="2rem"
+              onClick={sendMail}
+            >
+              Send
+            </Button>
+            {/* <input type="submit" value="Submit" className="formItem" /> */}
+            {toastValue ? (
+              <Toast style={{ width: "100%" }}>
+                <Toast.Body style={{ width: "100%" }}>
+                  {" "}
+                  Thank you for your email! I'll get back to you as soon as
+                  possible.
+                </Toast.Body>
+              </Toast>
+            ) : null}
+          </form>
+          <div className="contactImgContainer">
+            <img className="contactImg" src={contactImg} alt="" />
+          </div>
         </div>
       </div>
     </div>
