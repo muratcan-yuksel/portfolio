@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import "./contact.css";
 import contactImg from "../../assets/images/contactImg.svg";
 import { Button } from "../styled-components/Button.styled";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Popover from "react-bootstrap/Popover";
 import emailjs from "@emailjs/browser";
+import Toast from "react-bootstrap/Toast";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -15,6 +14,8 @@ const Contact = () => {
     email: false,
     message: false,
   });
+
+  const [toastValue, setToastValue] = useState();
 
   const handleName = (e) => {
     setName(e.target.value);
@@ -49,17 +50,9 @@ const Contact = () => {
       setName("");
       setEmail("");
       setMessage("");
+      setToastValue(true);
     }
   };
-
-  const popover = (
-    <Popover id="popover-basic">
-      <Popover.Header as="h3">Email sent!</Popover.Header>
-      <Popover.Body>
-        Thank you for your email! I'll get back to you as soon as possible.
-      </Popover.Body>
-    </Popover>
-  );
 
   return (
     <div className="contactComponent d-flex flex-column">
@@ -93,20 +86,27 @@ const Contact = () => {
             value={message}
           />
 
-          <OverlayTrigger trigger="click" placement="right" overlay={popover}>
-            <Button
-              backgroundColor="#ff1255"
-              color="white"
-              hoverColor="black"
-              border="2px solid white"
-              fontSize="1.5rem"
-              fontSizeHover="2rem"
-              onClick={sendMail}
-            >
-              Send
-            </Button>
-          </OverlayTrigger>
+          <Button
+            backgroundColor="#ff1255"
+            color="white"
+            hoverColor="black"
+            border="2px solid white"
+            fontSize="1.5rem"
+            fontSizeHover="2rem"
+            onClick={sendMail}
+          >
+            Send
+          </Button>
           {/* <input type="submit" value="Submit" className="formItem" /> */}
+          {toastValue ? (
+            <Toast>
+              <Toast.Body style={{ width: "100%" }}>
+                {" "}
+                Thank you for your email! I'll get back to you as soon as
+                possible.
+              </Toast.Body>
+            </Toast>
+          ) : null}
         </form>
         <div className="contactImgContainer">
           <img className="contactImg" src={contactImg} alt="" />
