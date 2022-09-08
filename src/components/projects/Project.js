@@ -12,26 +12,26 @@ const Project = ({ id, img, title, desc, techUsed, buttonTexts }) => {
           <img className="img" src={img} alt="" />
         </div>
       </div>
-      <div className="right d-flex flex-column justify-content-center align-items-center">
+      <div className="right d-flex flex-column justify-content-center align-items-center align-items-md-start">
         <div className="title justify-self-center">{title} </div>
         <Para
-          className="desc d-flex flex-column justify-content-center align-items-center"
+          className="desc "
           fontFamily="inconsalata"
           fontWeight="500"
           lineHeight="2rem"
           color="#172e38"
         >
-          {desc}{" "}
-          <div className="techUsed">
-            <ul className="  d-flex flex-wrap">
+          {desc}
+          <div className="techUsedTitle">Tech Used</div>
+          <div className="techUsed ">
+            <div className=" d-flex flex-wrap">
               {techUsed.map((e) => {
-                return <li className="techUsedItem">{e}</li>;
+                return <div className="techUsedItem">{e}</div>;
               })}
-            </ul>
+            </div>
           </div>
         </Para>
-
-        <div className="buttons d-flex justify-content-center flex-wrap">
+        <div className="buttons d-flex justify-content-center justify-content-md-start flex-wrap">
           {buttonTexts.map((e, index) => {
             return (
               <a

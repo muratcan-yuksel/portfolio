@@ -1,6 +1,7 @@
 .project {
   margin-bottom: 5rem;
 }
+
 .projectImg {
   width: 30rem;
   height: 30rem;
@@ -35,6 +36,11 @@
     font-size: 1.8rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .right {
+    width: 40%;
+  }
+}
 
 .buttons {
   width: 100%;
@@ -42,9 +48,15 @@
 .projectLink {
   margin-right: 1rem;
 }
-.techUsed {
-  width: 70%;
+.desc {
 }
+.techUsed {
+  /* width: 70%; */
+}
+
 .techUsedItem {
   margin: 0 1rem;
+}
+.techUsedTitle {
+  font-weight: 800;
 }
