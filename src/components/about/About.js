@@ -46,22 +46,22 @@ const About = () => {
     {
       name: "Semiotics MA",
       university: "University of Tartu/Estonia",
-      year: "2020",
+      year: "2017/2020",
     },
     {
       name: "Semiotics MA w/ Erasmus+ Scholarship",
       university: "L'Université de Bordeaux-Montaigne/France",
-      year: "2019",
+      year: "2018/2019",
     },
     {
       name: "Comparative Litarature BA w/ Erasmus+ Scholarship",
       university: "Eötvös Lorand University/Budapest",
-      year: "2016",
+      year: "2015/2016",
     },
     {
       name: "Comparative Litarature BA",
       university: "Eskişehir Osmangazi University/Eskişehir",
-      year: "2020",
+      year: "2012/2017",
     },
   ];
 
