@@ -62,9 +62,15 @@ const Header = () => {
               or, find me on:{" "}
             </Para>
             <div className="iconGroup d-flex flex-row justify-content-center align-items-center">
-              <FaGithub className="headerIcon" />
-              <FaLinkedin className="headerIcon" />
-              <SiDevdotto className="headerIcon" />
+              <a href="https://github.com/muratcan-yuksel">
+                <FaGithub className="headerIcon" />
+              </a>
+              <a href="https://www.linkedin.com/in/murat-can-y%C3%BCksel-2b1347119/">
+                <FaLinkedin className="headerIcon" />
+              </a>
+              <a href="https://dev.to/muratcanyuksel">
+                <SiDevdotto className="headerIcon" />
+              </a>
             </div>
           </div>
         </div>

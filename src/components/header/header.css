@@ -48,6 +48,8 @@
 .headerIcon {
   font-size: 2rem;
   margin-right: 10px;
+  text-decoration: none;
+  color: black;
 }
 @media only screen and (max-width: 992px) {
   .headerComponent {

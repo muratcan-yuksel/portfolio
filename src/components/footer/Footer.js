@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <div className="footerComponent d-flex justify-content-center align-items-center">
       <Para
-        hoverBg="var(--yellow-bg)"
         margin="0 10px"
         fontFamily="inconsalata"
         fontWeight="500"
