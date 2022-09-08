@@ -15,7 +15,7 @@ const Contact = () => {
     message: false,
   });
   const [toastValue, setToastValue] = useState();
-  const [regexCheck, setRegexCheck] = useState(null);
+  const [regexCheck, setRegexCheck] = useState(true);
 
   const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
