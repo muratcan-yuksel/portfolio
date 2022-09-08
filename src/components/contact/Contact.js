@@ -14,27 +14,43 @@ const Contact = () => {
     email: false,
     message: false,
   });
-
   const [toastValue, setToastValue] = useState();
+  const [regexCheck, setRegexCheck] = useState(null);
+
+  const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
   const handleName = (e) => {
     setName(e.target.value);
     setInputBools({ ...inputBools, name: true });
-    console.log(inputBools);
   };
   const handleEmail = (e) => {
     setEmail(e.target.value);
     setInputBools({ ...inputBools, email: true });
-    console.log(inputBools);
+    checkRegex();
   };
   const handleMsg = (e) => {
     setMessage(e.target.value);
     setInputBools({ ...inputBools, message: true });
-    console.log(inputBools);
+  };
+
+  const checkRegex = () => {
+    let testRegex = emailRegex.test(email);
+    if (testRegex) {
+      console.log(true);
+      setRegexCheck(true);
+    } else {
+      console.log(false);
+      setRegexCheck(false);
+    }
   };
   const sendMail = (e) => {
     e.preventDefault();
-    if (inputBools.name && inputBools.email && inputBools.message) {
+    if (
+      inputBools.name &&
+      inputBools.email &&
+      inputBools.message &&
+      regexCheck
+    ) {
       console.log(name, email, message);
       // emailjs.send(
       //   process.env.REACT_APP_SERVICE_ID,
@@ -78,6 +94,14 @@ const Contact = () => {
             onChange={handleEmail}
             value={email}
           />
+          {regexCheck ? null : (
+            <Toast style={{ width: "100%" }}>
+              <Toast.Body style={{ width: "100%" }}>
+                {" "}
+                Please enter a valid email address.
+              </Toast.Body>
+            </Toast>
+          )}
           <textarea
             placeholder="Your Message"
             name="message"
@@ -99,7 +123,7 @@ const Contact = () => {
           </Button>
           {/* <input type="submit" value="Submit" className="formItem" /> */}
           {toastValue ? (
-            <Toast>
+            <Toast style={{ width: "100%" }}>
               <Toast.Body style={{ width: "100%" }}>
                 {" "}
                 Thank you for your email! I'll get back to you as soon as
