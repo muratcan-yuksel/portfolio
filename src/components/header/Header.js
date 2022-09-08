@@ -38,18 +38,20 @@ const Header = () => {
             I build things for web 3 as well as the good ol' fashioned web 2
           </Para>
           <div className="buttonGroup d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-start align-items-md-center ">
-            <Button
-              className="headerBtn"
-              backgroundColor="#ff1255"
-              color="white"
-              hoverColor="black"
-              border="2px solid white"
-              bgColor="var(--yellow-bg)"
-              fontSize="1.5rem"
-              fontSizeHover="2rem"
-            >
-              <p className="headerButtonText">contact me</p>
-            </Button>
+            <a href="#contactComponent">
+              <Button
+                className="headerBtn"
+                backgroundColor="#ff1255"
+                color="white"
+                hoverColor="black"
+                border="2px solid white"
+                bgColor="var(--yellow-bg)"
+                fontSize="1.5rem"
+                fontSizeHover="2rem"
+              >
+                <p className="headerButtonText">contact me</p>
+              </Button>
+            </a>
             <Para
               hoverBg="var(--yellow-bg)"
               margin="0 10px"
