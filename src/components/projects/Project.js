@@ -22,15 +22,33 @@ const Project = ({ id, img, title, desc, techUsed, buttonTexts }) => {
           color="#172e38"
         >
           {desc}
-          <div className="techUsedTitle">Tech Used</div>
-          <div className="techUsed ">
-            <div className=" d-flex flex-wrap">
-              {techUsed.map((e) => {
-                return <div className="techUsedItem">{e}</div>;
-              })}
-            </div>
-          </div>
         </Para>
+        <Para
+          fontFamily="inconsalata"
+          fontWeight="800"
+          color="#172e38"
+          className="techUsedTitle"
+        >
+          Tech Used
+        </Para>
+        <div className="techUsed ">
+          <div className=" d-flex flex-wrap">
+            {techUsed.map((e, index) => {
+              return (
+                <Para
+                  fontFamily="inconsalata"
+                  fontWeight="500"
+                  color="#172e38"
+                  margin="0 0 1rem 1rem"
+                  key={index}
+                  className="techUsedItem"
+                >
+                  {e}
+                </Para>
+              );
+            })}
+          </div>
+        </div>
         <div className="buttons d-flex justify-content-center justify-content-md-start flex-wrap">
           {buttonTexts.map((e, index) => {
             return (
