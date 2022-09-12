@@ -64,13 +64,25 @@ const Header = () => {
               or, find me on:{" "}
             </Para>
             <div className="iconGroup d-flex flex-row justify-content-center align-items-center">
-              <a href="https://github.com/muratcan-yuksel">
+              <a
+                href="https://github.com/muratcan-yuksel"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub className="headerIcon" />
               </a>
-              <a href="https://www.linkedin.com/in/murat-can-y%C3%BCksel-2b1347119/">
+              <a
+                href="https://www.linkedin.com/in/murat-can-y%C3%BCksel-2b1347119/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaLinkedin className="headerIcon" />
               </a>
-              <a href="https://dev.to/muratcanyuksel">
+              <a
+                href="https://dev.to/muratcanyuksel"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <SiDevdotto className="headerIcon" />
               </a>
             </div>
