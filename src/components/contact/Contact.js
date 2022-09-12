@@ -52,17 +52,17 @@ const Contact = () => {
       regexCheck
     ) {
       console.log(name, email, message);
-      // emailjs.send(
-      //   process.env.REACT_APP_SERVICE_ID,
-      //   process.env.REACT_APP_TEMPLATE_ID,
-      //   {
-      //     to_name: "Murat",
-      //     from_name: name,
-      //     message: message,
-      //     from_email: email,
-      //   },
-      //   process.env.REACT_APP_PUBLIC_KEY
-      // );
+      emailjs.send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        {
+          to_name: "Murat",
+          from_name: name,
+          message: message,
+          from_email: email,
+        },
+        process.env.REACT_APP_PUBLIC_KEY
+      );
       setName("");
       setEmail("");
       setMessage("");
