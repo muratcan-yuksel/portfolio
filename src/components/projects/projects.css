@@ -27,6 +27,7 @@
   width: auto;
   /* text-decoration: underline; */
   margin-bottom: 1rem;
+  text-align: center;
 }
 @media only screen and (max-width: 576px) {
   .bigTitle {
