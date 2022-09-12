@@ -49,6 +49,9 @@ const Contact = () => {
       inputBools.name &&
       inputBools.email &&
       inputBools.message &&
+      name !== "" &&
+      email !== "" &&
+      message !== "" &&
       regexCheck
     ) {
       console.log(name, email, message);
